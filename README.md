@@ -9,7 +9,7 @@ Resources
 - [AWS AppSync Tutorial with React](https://medium.com/@benawad/aws-appsync-tutorial-with-react-4e272a6f3527)
 - [Video walkthrough](https://www.youtube.com/watch?time_continue=40&v=E270S3eNqSg)
 
-`amplify init`
+### Prepare/Configure AWS amplify
 
 Install (or update) AWS Amplify CLI:
 
@@ -24,6 +24,10 @@ This will open your browser to the AWS login screen. Now log in to your AWS acco
 Click through the questions on the terminal and AWS console browser screen to create User IAM roles etc.
 
 ![Console configuration](./images/aws-configuration.png)
+
+### Init amplify app
+
+`amplify init`
 
 ## AWS User Credentials
 
@@ -57,6 +61,10 @@ After amplify initialisation and configuration you should now have an `amplify` 
 
 `amplify add api`
 
+Make sure you choose `AWS Cognito user pools` for authentication.
+
+![Add API](./images/update-api.png)
+
 ### Amplify project
 
 ![Amplify project](./images/amplify-project.png)
@@ -67,7 +75,9 @@ After amplify initialisation and configuration you should now have an `amplify` 
 
 `amplify push`
 
-Here the process gets "stuck" on my system (MacOS).
+In case the push freezes, it is most likely due to a misconfiguration in one of the previous steps. Try this recipe again from the beginning.
+
+Note: It might well be your best option to start with a clean AWS amplify project and then pull in the app from the remote repo on top of it.
 
 ## Git ignored files
 
