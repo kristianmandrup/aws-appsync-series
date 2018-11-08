@@ -68,3 +68,14 @@ After amplify initialisation and configuration you should now have an `amplify` 
 `amplify push`
 
 Here the process gets "stuck" on my system (MacOS).
+
+## Git ignored files
+
+Note that the following file patterns are added to `.gitignore` and not part of the repo:
+
+```txt
+amplify
+.amplifyrc
+aws-exports.js
+.graphqlconfig.yml
+```
