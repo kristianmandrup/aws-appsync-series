@@ -50,3 +50,21 @@ After amplify initialisation and configuration you should now have an `amplify` 
     /backend
 .amplifyrc
 ```
+
+### Add API
+
+![Add API](./images/add-api.png)
+
+`amplify add api`
+
+### Amplify project
+
+![Amplify project](./images/amplify-project.png)
+
+### Amplify push
+
+![Amplify push](./images/amplify-push.png)
+
+`amplify push`
+
+Here the process gets "stuck" on my system (MacOS).
